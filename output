@@ -1,0 +1,37 @@
+/* Run on Windows, using Command Prompt.*/ 
+
+C:\Users\ananyaanany>cd \
+
+C:\>cd C Assignment
+
+C:\C Assignment>mingw32-make -f makefile.mk
+gcc -Wall -Wextra -I. -c -o main.o main.c
+gcc -Wall -Wextra -I. -c -o student.o student.c
+gcc -Wall -Wextra -I. -o grade_card_program main.o student.o
+
+C:\C Assignment>grade_card_program
+Enter the number of students: 1
+
+Student 1:
+Enter student name: Ananya
+Enter the number of subjects for Exam 1: 5
+Enter marks for Exam 1:
+Physics (Exam 1): 67
+PSWC (Exam 1): 90
+Mathematics (Exam 1): 79
+Electrical (Exam 1): 88
+Mechanical (Exam 1): 83
+Enter the number of subjects for Exam 2: 5
+Enter marks for Exam 2:
+Physics (Exam 2): 88
+PSWC (Exam 2): 78
+Mathematics (Exam 2): 89
+Electrical (Exam 2): 79
+Mechanical (Exam 2): 100
+
+===== Grade Card =====
+Name: Ananya
+Average Marks (Exam 1): 81.40
+Grade (Exam 1): A
+Average Marks (Exam 2): 86.80
+Grade (Exam 2): A
